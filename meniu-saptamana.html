@@ -4,39 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meniul Săptămânii — PEP Club Educational Iași</title>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
   <style>
-    :root{ --green:#2f7d5b; --green-d:#1f4d39; --green-100:#e6f3ec; --accent:#e07d1f; --cream:#fdfaf4; --ink:#233029; --ink-soft:#51635a; }
+    :root{ --green:#2c5a4b; --green-d:#11302a; --green-100:#e8efe9; --accent:#a8863f; --gold:#c2a35b; --cream:#f8f5ef; --ink:#1f2a25; --ink-soft:#5f6b64; --line:rgba(23,61,51,.10); --ff:"Inter",system-ui,sans-serif; --ff-d:"Fraunces",Georgia,serif; }
     *{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:"Nunito",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;padding:30px 18px;}
-    .sheet{max-width:900px;margin:0 auto;background:#fff;border-radius:18px;box-shadow:0 16px 50px rgba(31,77,57,.14);overflow:hidden;}
-    .head{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
-    .head h1{font-family:"Baloo 2",sans-serif;font-size:1.7rem;}
-    .head p{opacity:.9;font-size:.95rem;margin-top:4px;}
-    .logo{font-family:"Baloo 2",sans-serif;font-weight:700;font-size:1.3rem;background:rgba(255,255,255,.16);padding:10px 16px;border-radius:13px;}
-    .body{padding:28px 34px 34px;}
-    .src{background:var(--green-100);border-radius:12px;padding:14px 18px;font-size:.92rem;margin-bottom:22px;color:var(--green-d);}
+    body{font-family:var(--ff);color:var(--ink);background:var(--cream);line-height:1.6;padding:34px 18px;}
+    .sheet{max-width:900px;margin:0 auto;background:#fffdf9;border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 60px rgba(23,61,51,.12);overflow:hidden;}
+    .head{background:var(--green-d);color:#fff;padding:34px 38px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+    .head h1{font-family:var(--ff-d);font-weight:500;font-size:1.8rem;}
+    .head h1 i{color:var(--gold);}
+    .head p{opacity:.78;font-size:.94rem;margin-top:4px;}
+    .logo{font-family:var(--ff-d);font-weight:600;font-size:1.25rem;color:var(--gold);background:rgba(255,255,255,.08);padding:10px 16px;border-radius:12px;}
+    .body{padding:30px 38px 38px;}
+    .src{background:var(--green-100);border-radius:12px;padding:15px 18px;font-size:.92rem;margin-bottom:24px;color:var(--green-d);}
     .src strong{color:var(--green-d);}
     table{width:100%;border-collapse:collapse;font-size:.95rem;}
-    th,td{text-align:left;padding:13px 12px;vertical-align:top;border-bottom:1px solid #eee;}
-    th{font-family:"Baloo 2",sans-serif;color:var(--green-d);background:#faf6ee;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;}
-    td.day{font-family:"Baloo 2",sans-serif;font-weight:700;color:var(--green);white-space:nowrap;}
-    td.kcal{font-weight:800;color:var(--accent);white-space:nowrap;}
+    th,td{text-align:left;padding:14px 12px;vertical-align:top;border-bottom:1px solid var(--line);}
+    th{font-family:var(--ff);font-weight:600;color:var(--green-d);background:#f2ede3;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;}
+    td.day{font-family:var(--ff-d);font-weight:600;color:var(--green);white-space:nowrap;}
+    td.kcal{font-weight:600;color:var(--accent);white-space:nowrap;}
     .alg{font-size:.8rem;color:var(--ink-soft);}
-    .legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
-    .badge{background:var(--green-100);color:var(--green-d);font-weight:700;font-size:.82rem;padding:6px 13px;border-radius:100px;}
-    .badge i{margin-right:5px;} .btn i{margin-right:6px;}
-    .alt{margin-top:24px;background:#fffaf2;border:1px solid #f3e3c8;border-radius:14px;padding:18px 20px;}
-    .alt h3{font-family:"Baloo 2",sans-serif;color:var(--accent);margin-bottom:8px;font-size:1.05rem;}
+    .legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+    .badge{background:var(--green-100);color:var(--green-d);font-weight:500;font-size:.82rem;padding:7px 14px;border-radius:100px;}
+    .badge i{margin-right:6px;color:var(--green);} .btn i{margin-right:7px;}
+    .alt{margin-top:26px;background:#faf6ec;border:1px solid #ece0c6;border-radius:14px;padding:20px 22px;}
+    .alt h3{font-family:var(--ff-d);font-weight:600;color:var(--accent);margin-bottom:10px;font-size:1.08rem;}
     .alt ul{margin-left:18px;font-size:.93rem;}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;}
-    .btn{font-family:"Baloo 2",sans-serif;font-weight:600;padding:12px 22px;border-radius:100px;border:2px solid var(--green);cursor:pointer;text-decoration:none;font-size:.98rem;}
-    .btn-fill{background:var(--accent);border-color:var(--accent);color:#fff;}
-    .btn-ghost{background:#fff;color:var(--green);}
-    .foot{padding:18px 34px;background:#faf6ee;color:var(--ink-soft);font-size:.85rem;text-align:center;}
-    .note{font-size:.82rem;color:var(--ink-soft);margin-top:14px;font-style:italic;}
-    @media print{ body{background:#fff;padding:0;} .sheet{box-shadow:none;border-radius:0;} .actions{display:none;} }
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;}
+    .btn{font-family:var(--ff);font-weight:600;padding:13px 26px;border-radius:100px;border:1.5px solid var(--green);cursor:pointer;text-decoration:none;font-size:.96rem;transition:.2s;}
+    .btn-fill{background:var(--green-d);border-color:var(--green-d);color:#fff;}
+    .btn-fill:hover{background:#0c241f;}
+    .btn-ghost{background:#fffdf9;color:var(--green);}
+    .btn-ghost:hover{background:var(--green-100);}
+    .foot{padding:20px 38px;background:#f2ede3;color:var(--ink-soft);font-size:.85rem;text-align:center;}
+    .note{font-size:.82rem;color:var(--ink-soft);margin-top:16px;font-style:italic;}
+    @media (max-width:540px){ body{padding:14px 8px;} .head,.body,.foot{padding-left:22px;padding-right:22px;} th,td{padding:11px 8px;font-size:.88rem;} .actions .btn{flex:1;text-align:center;justify-content:center;} }
+    @media print{ body{background:#fff;padding:0;} .sheet{box-shadow:none;border:0;border-radius:0;} .actions{display:none;} }
   </style>
 </head>
 <body>

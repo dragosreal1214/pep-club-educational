@@ -89,5 +89,5 @@ vercel --prod # producție
 ## Personalizare rapidă
 
 - **Culori:** variabilele din `:root` în `assets/css/style.css`.
-- **Fonturi:** Fredoka (titluri) + Nunito (text), încărcate din Google Fonts.
+- **Fonturi:** Fraunces (titluri, serif premium) + Inter (text), din Google Fonts — ambele cu suport complet pentru diacritice românești (ă â î ș ț).
 - **Hartă:** în `index.html`, înlocuiește adresa din `src` al `<iframe>`-ului hărții.
