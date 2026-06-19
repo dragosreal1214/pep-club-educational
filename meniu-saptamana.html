@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meniul Săptămânii — PEP Club Educational Iași</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{ --green:#2f7d5b; --green-d:#1f4d39; --green-100:#e6f3ec; --accent:#e07d1f; --cream:#fdfaf4; --ink:#233029; --ink-soft:#51635a; }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:"Nunito",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;padding:30px 18px;}
+    .sheet{max-width:900px;margin:0 auto;background:#fff;border-radius:18px;box-shadow:0 16px 50px rgba(31,77,57,.14);overflow:hidden;}
+    .head{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+    .head h1{font-family:"Baloo 2",sans-serif;font-size:1.7rem;}
+    .head p{opacity:.9;font-size:.95rem;margin-top:4px;}
+    .logo{font-family:"Baloo 2",sans-serif;font-weight:700;font-size:1.3rem;background:rgba(255,255,255,.16);padding:10px 16px;border-radius:13px;}
+    .body{padding:28px 34px 34px;}
+    .src{background:var(--green-100);border-radius:12px;padding:14px 18px;font-size:.92rem;margin-bottom:22px;color:var(--green-d);}
+    .src strong{color:var(--green-d);}
+    table{width:100%;border-collapse:collapse;font-size:.95rem;}
+    th,td{text-align:left;padding:13px 12px;vertical-align:top;border-bottom:1px solid #eee;}
+    th{font-family:"Baloo 2",sans-serif;color:var(--green-d);background:#faf6ee;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;}
+    td.day{font-family:"Baloo 2",sans-serif;font-weight:700;color:var(--green);white-space:nowrap;}
+    td.kcal{font-weight:800;color:var(--accent);white-space:nowrap;}
+    .alg{font-size:.8rem;color:var(--ink-soft);}
+    .legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
+    .badge{background:var(--green-100);color:var(--green-d);font-weight:700;font-size:.82rem;padding:6px 13px;border-radius:100px;}
+    .alt{margin-top:24px;background:#fffaf2;border:1px solid #f3e3c8;border-radius:14px;padding:18px 20px;}
+    .alt h3{font-family:"Baloo 2",sans-serif;color:var(--accent);margin-bottom:8px;font-size:1.05rem;}
+    .alt ul{margin-left:18px;font-size:.93rem;}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;}
+    .btn{font-family:"Baloo 2",sans-serif;font-weight:600;padding:12px 22px;border-radius:100px;border:2px solid var(--green);cursor:pointer;text-decoration:none;font-size:.98rem;}
+    .btn-fill{background:var(--accent);border-color:var(--accent);color:#fff;}
+    .btn-ghost{background:#fff;color:var(--green);}
+    .foot{padding:18px 34px;background:#faf6ee;color:var(--ink-soft);font-size:.85rem;text-align:center;}
+    .note{font-size:.82rem;color:var(--ink-soft);margin-top:14px;font-style:italic;}
+    @media print{ body{background:#fff;padding:0;} .sheet{box-shadow:none;border-radius:0;} .actions{display:none;} }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="head">
+      <div>
+        <h1>Meniul Săptămânii 🍽️</h1>
+        <p>PEP Club Educational · Iași — Galata</p>
+      </div>
+      <div class="logo">PEP</div>
+    </div>
+
+    <div class="body">
+      <div class="src">
+        <strong>Sursa mâncării:</strong> [Numele firmei de catering] — unitate autorizată sanitar-veterinar <strong>(DSV)</strong>. Livrare zilnică, proaspăt. Caloriile sunt estimative și adaptate vârstei școlare.
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ziua</th>
+            <th>Felul I</th>
+            <th>Felul II</th>
+            <th>Desert / Băutură</th>
+            <th>Calorii</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="day">Luni</td>
+            <td>Supă de pui cu tăiței<div class="alg">Alergeni: gluten, ou, țelină</div></td>
+            <td>Piure de cartofi cu șnițel de pui<div class="alg">Alergeni: gluten, ou, lapte</div></td>
+            <td>Compot de fructe</td>
+            <td class="kcal">≈ 620 kcal</td>
+          </tr>
+          <tr>
+            <td class="day">Marți</td>
+            <td>Ciorbă de legume<div class="alg">Alergeni: țelină</div></td>
+            <td>Tocăniță de vită cu orez<div class="alg">Alergeni: —</div></td>
+            <td>Fruct proaspăt</td>
+            <td class="kcal">≈ 590 kcal</td>
+          </tr>
+          <tr>
+            <td class="day">Miercuri</td>
+            <td>Supă cremă de roșii<div class="alg">Alergeni: lapte, țelină</div></td>
+            <td>Paste cu sos &amp; parmezan<div class="alg">Alergeni: gluten, lapte</div></td>
+            <td>Iaurt<div class="alg">Alergeni: lapte</div></td>
+            <td class="kcal">≈ 560 kcal</td>
+          </tr>
+          <tr>
+            <td class="day">Joi</td>
+            <td>Ciorbă rădăuțeană<div class="alg">Alergeni: ou, lapte, țelină</div></td>
+            <td>Pulpe de pui la cuptor cu cartofi<div class="alg">Alergeni: —</div></td>
+            <td>Compot de fructe</td>
+            <td class="kcal">≈ 640 kcal</td>
+          </tr>
+          <tr>
+            <td class="day">Vineri</td>
+            <td>Supă de pește<div class="alg">Alergeni: pește, țelină</div></td>
+            <td>Pilaf de legume<div class="alg">Alergeni: —</div></td>
+            <td>Prăjitură de casă<div class="alg">Alergeni: gluten, ou, lapte</div></td>
+            <td class="kcal">≈ 600 kcal</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="legend">
+        <span class="badge">🌱 Opțiune vegetariană zilnică</span>
+        <span class="badge">🚫🌾 Variantă fără gluten</span>
+        <span class="badge">🥛 Variantă fără lactoză</span>
+        <span class="badge">🐟 Pește o dată / săptămână</span>
+      </div>
+
+      <div class="alt">
+        <h3>Opțiuni alternative pentru intoleranțe &amp; alergii</h3>
+        <ul>
+          <li><strong>Vegetarian:</strong> înlocuim felul cu carne cu o variantă pe bază de legume, ouă sau brânză.</li>
+          <li><strong>Fără gluten:</strong> garnituri și deserturi adaptate, fără ingrediente pe bază de grâu.</li>
+          <li><strong>Fără lactoză:</strong> evităm produsele lactate sau folosim alternative tolerate.</li>
+          <li>Ne anunți la înscriere alergiile / intoleranțele copilului și pregătim porția potrivită.</li>
+        </ul>
+      </div>
+
+      <p class="note">Cele 14 grupe de alergeni conform legislației sunt semnalate pentru fiecare preparat. Acest meniu este un exemplu — meniul real se actualizează săptămânal.</p>
+
+      <div class="actions">
+        <a href="javascript:window.print()" class="btn btn-fill">🖨️ Printează / Salvează PDF</a>
+        <a href="index.html" class="btn btn-ghost">← Înapoi la site</a>
+      </div>
+    </div>
+
+    <div class="foot">
+      PEP Club Educational · Șos. Voinești 17, Galata, Iași · 0756 266 338 · Luni–Vineri 8:00–19:00
+    </div>
+  </div>
+</body>
+</html>
