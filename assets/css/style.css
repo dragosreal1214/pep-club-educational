@@ -47,6 +47,20 @@ p { margin-bottom: 1rem; }
 a { color: var(--green-700); text-decoration: none; }
 img { max-width: 100%; display: block; }
 
+/* ---------- Icons (Font Awesome) ---------- */
+.ic-badge i,
+.hero-badge .ic i,
+.ci-row .ic i,
+.nutri-points .ic i { color: var(--green-700); }
+.value-card .ic-badge i,
+.opt-card .ic-badge i { color: var(--accent-dark); }
+.safety-card li .ic i { color: var(--green-500); }
+.diet-badge i, .school-chip span i { color: inherit; }
+.trust .dot { font-size: .7em; }
+.tl-card h3 i, .menu-card h3 i { color: var(--accent); margin-right: 8px; }
+.team-photo i, .gallery .tile > i, .hero-photo i, .media-box .ph .big { line-height: 1; }
+.btn i { font-size: .95em; }
+
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
 .section { padding: 86px 0; }

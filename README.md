@@ -43,7 +43,7 @@ python3 -m http.server 8000
 - **Galerie** foto/video
 - **Contact &amp; locație** — hartă Google Maps, formular, școlile deservite
 
-## ⚠️ De completat cu date reale (placeholdere)
+## De completat cu date reale (placeholdere)
 
 Caută și înlocuiește în `index.html` și `meniu-saptamana.html`:
 
