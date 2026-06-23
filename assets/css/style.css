@@ -123,20 +123,8 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 78px; }
-.brand { display: flex; align-items: center; gap: 12px; font-family: var(--ff-display); font-weight: 700; font-size: 1.32rem; color: var(--ink); }
-.brand .logo {
-  width: 46px; height: 46px; border-radius: 14px;
-  background: var(--blue);
-  display: grid; place-items: center; color: #fff; font-family: var(--ff-display); font-weight: 800; font-size: 1.1rem;
-  box-shadow: 0 6px 14px rgba(31,116,208,.32);
-  transform: rotate(-4deg);
-}
-/* Wordmark colorat PeP */
-.brand .logo .l1 { color:#fff; }
-.brand small { display:block; font-family: var(--ff); font-weight:800; font-size:.56rem; letter-spacing:.18em; color: var(--teal-600); text-transform: uppercase; margin-top:1px; }
-.brand .wm-blue { color: var(--blue); }
-.brand .wm-magenta { color: var(--magenta); }
-.brand .wm-teal { color: var(--teal-600); }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-logo { height: 52px; width: auto; display: block; }
 .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
 .nav-links a { color: var(--ink); font-weight: 700; font-size: .94rem; padding: 9px 14px; border-radius: 100px; transition: background .15s, color .15s; }
 .nav-links a:hover { background: var(--tint-blue); color: var(--blue-700); }
@@ -415,11 +403,8 @@ img { max-width: 100%; display: block; }
 .site-footer h4 { color:#fff; margin-bottom:16px; font-size:1.05rem; font-weight:700; }
 .site-footer a { color:#aebfda; display:block; padding:5px 0; font-size:.94rem; font-weight:600; }
 .site-footer a:hover { color: var(--yellow); }
-.footer-brand .brand { color:#fff; margin-bottom:16px; }
-.footer-brand .brand .logo { background: rgba(255,255,255,.12); }
-.footer-brand .brand .wm-blue,
-.footer-brand .brand .wm-magenta,
-.footer-brand .brand .wm-teal { color:#fff; }
+.footer-brand .brand { margin-bottom:16px; }
+.brand-logo--footer { height:64px; background:#fff; padding:10px 14px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.18); }
 .footer-brand p { font-size:.95rem; color:#93a6c6; max-width:300px; }
 .footer-social { display:flex; gap:10px; margin-top:16px; }
 .footer-social a { width:42px; height:42px; border-radius:13px; background: rgba(255,255,255,.1); display:grid; place-items:center; color:#fff; }
