@@ -19,7 +19,8 @@
     .body{padding:30px 38px 38px;}
     .src{background:var(--green-100);border-radius:12px;padding:15px 18px;font-size:.92rem;margin-bottom:24px;color:var(--green-d);}
     .src strong{color:var(--green-d);}
-    table{width:100%;border-collapse:collapse;font-size:.95rem;}
+    .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:480px;}
     th,td{text-align:left;padding:14px 12px;vertical-align:top;border-bottom:1px solid var(--line);}
     th{font-family:var(--ff);font-weight:600;color:var(--green-d);background:#eaf3fc;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;}
     td.day{font-family:var(--ff-d);font-weight:600;color:var(--green);white-space:nowrap;}
@@ -50,7 +51,7 @@
         <h1><i class="fa-solid fa-utensils"></i> Meniul Săptămânii</h1>
         <p>PEP Club Educational · Iași — Galata</p>
       </div>
-      <img class="logo-img" src="assets/img/logo-pep.jpg" alt="Clubul Educational PEP — performanță, experiență, pasiune" />
+      <img class="logo-img" src="assets/img/logo-pep.png" alt="Clubul Educational PEP — performanță, experiență, pasiune" />
     </div>
 
     <div class="body">
@@ -58,6 +59,7 @@
         <strong>Sursa mâncării:</strong> [Numele firmei de catering] — unitate autorizată sanitar-veterinar <strong>(DSV)</strong>. Livrare zilnică, proaspăt. Caloriile sunt estimative și adaptate vârstei școlare.
       </div>
 
+      <div class="tbl-wrap">
       <table>
         <thead>
           <tr>
@@ -106,6 +108,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <div class="legend">
         <span class="badge"><i class="fa-solid fa-leaf"></i> Opțiune vegetariană zilnică</span>
